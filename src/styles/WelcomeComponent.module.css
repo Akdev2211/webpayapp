@@ -1,0 +1,65 @@
+/* Register form styling */
+.registerForm {
+    width: 100%;
+    max-width: 400px;
+    background: #121212; /* Even darker background for better contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Stronger shadow for more depth */
+  }
+  
+  /* Input group styling */
+  .inputGroup {
+    margin-bottom: 15px;
+  }
+  
+  /* Label styling */
+  .label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #e0e0e0; /* Light color for labels for readability */
+  }
+  
+  /* Input and select styling */
+  input,
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #444; /* Darker border for better visibility */
+    border-radius: 4px;
+    font-size: 14px;
+    background: #2a2a2a; /* Slightly lighter background for input fields */
+    color: #e0e0e0; /* Light color for text in input fields */
+  }
+  
+  /* Input and select focus state */
+  input:focus,
+  select:focus {
+    border-color: #1e90ff; /* Brighter blue for focus for better visibility */
+    outline: none;
+  }
+  
+  /* Error message styling */
+  .error {
+    color: #ff6f61; /* Light coral color for errors to stand out */
+    font-size: 12px;
+  }
+  
+  /* Submit button styling */
+  .submitButton {
+    width: 100%;
+    padding: 10px;
+    background: #1e90ff; /* Brighter blue for the button */
+    border: none;
+    color: #ffffff; /* White text for the button */
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Submit button hover effect */
+  .submitButton:hover {
+    background: #1c86ee; /* Slightly darker blue for hover effect */
+  }
+  
