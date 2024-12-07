@@ -1,4 +1,4 @@
-import { BrowserRouter , Route, Routes, useLocation} from "react-router-dom";
+import { BrowserRouter , Route, Routes} from "react-router-dom";
 import "./App.css";
 import { AppProvider } from "./store/AppContext";
 import DashBoardNav from "./components/DashBoardNav";
@@ -21,7 +21,6 @@ const App: React.FC = () => {
   return (
     <AppProvider>
        <BrowserRouter>
-       
        <Routes>
         <Route path="/signup" element={<SignUp />} />
         <Route path="/" element={<Login />} />
