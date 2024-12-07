@@ -1,4 +1,4 @@
-import { BrowserRouter , Route, Routes} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { AppProvider } from "./store/AppContext";
 import DashBoardNav from "./components/DashBoardNav";
@@ -15,23 +15,22 @@ const App: React.FC = () => {
   //   //   location.pathname !== "/authpage" && location.pathname !== "/";
 
   //   // return showNavbar ? <DashBoardNav /> : null;
-  //   <Route path=''></Route> 
+  //   <Route path=''></Route>
   // };
 
   return (
     <AppProvider>
-       <BrowserRouter>
-       <Routes>
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/" element={<Login />} />
-      </Routes>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
 
-      <DashBoardNav/>
-      <Routes>
-        <Route path="/home" element={<Home />} />
-      </Routes>
-      
-    </BrowserRouter>
+        <DashBoardNav />
+        <Routes>
+          <Route path="/home" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
     </AppProvider>
   );
 };
